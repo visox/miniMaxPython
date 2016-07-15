@@ -255,7 +255,7 @@ def main():
         board = makeMove(board, ai, move)
         printBoard(board)
         if isEnd(board, ai, human):
-            return
+            break
 
         humanMove = getHumanMove(board)
         board = makeMove(board, human, humanMove)
